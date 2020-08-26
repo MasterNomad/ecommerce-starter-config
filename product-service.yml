@@ -22,6 +22,9 @@ spring:
         cache:
           use_query_cache: false
           use_second_level_cache: false
+  cloud:
+    config:
+      allowOverride: true
 
 security:
   basic:
