@@ -31,4 +31,7 @@ jwt:
   expires_in: 86400
   secret: sgd34bwfAbfSBPpe0r8gwbg
 
+app:
+  name: monolith
+
 
