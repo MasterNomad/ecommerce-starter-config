@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka
+
+  cloud:
+    gateway:
+      routes:
+        - id: monolithModule
+          uri: lb://monolith
+          predicates:
+            - Path=/cart/**, /order/**
+
+        - id: productModule
+          uri: lb://product-service
+          predicates:
+            - Path=/product/**, /group/**, /groupVariant/**
