@@ -25,6 +25,7 @@ spring:
   cloud:
     config:
       allowOverride: true
+      overrideNone: true
 
 security:
   basic:
