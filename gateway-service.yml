@@ -1,12 +1,13 @@
-cloud:
-  gateway:
-    routes:
-      - id: monolithModule
-        uri: lb://monolith
-        predicates:
-          - Path=/cart/**, /order/**
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: monolithModule
+          uri: lb://monolith
+          predicates:
+            - Path=/cart/**, /order/**
 
-      - id: productModule
-        uri: lb://product-service
-        predicates:
-          - Path=/product/**, /group/**, /groupVariant/**
+        - id: productModule
+          uri: lb://product-service
+          predicates:
+            - Path=/product/**, /group/**, /groupVariant/**
