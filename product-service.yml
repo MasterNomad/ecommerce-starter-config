@@ -28,5 +28,5 @@ security:
   basic:
     enabled: false
 
-    recommendation:
-      default: 7, 8, 11
+recommendation:
+  default: 7, 8, 11
