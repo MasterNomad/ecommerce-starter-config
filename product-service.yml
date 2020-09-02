@@ -28,5 +28,9 @@ security:
   basic:
     enabled: false
 
+feign:
+  hystrix:
+    enabled: true
+
 recommendation:
   default: 7, 8, 11
