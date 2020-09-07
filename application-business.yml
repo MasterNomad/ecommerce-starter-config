@@ -1,6 +1,5 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3310/statistic
     driver: com.mysql.jdbc.Driver
     username: root
     password: root
