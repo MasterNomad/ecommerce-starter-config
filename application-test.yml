@@ -1,0 +1,3 @@
+feign:
+  url:
+    warehouse: localhost:1000
