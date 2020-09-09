@@ -3,7 +3,3 @@ spring:
     url: jdbc:mysql://localhost:3310/statistic
   kafka:
     bootstrap-servers: localhost:9092
-
-security:
-  basic:
-    enabled: false

@@ -1,7 +1,3 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3310/recommendation
-
-security:
-  basic:
-    enabled: false

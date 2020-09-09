@@ -18,3 +18,8 @@ spring:
     config:
       allowOverride: true
       overrideNone: true
+
+security:
+  basic:
+    enabled: false
+  ignored: /**

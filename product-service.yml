@@ -6,10 +6,6 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3310/product
 
-security:
-  basic:
-    enabled: false
-
 feign:
   hystrix:
     enabled: true
