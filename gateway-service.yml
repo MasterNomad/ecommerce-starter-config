@@ -11,3 +11,8 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/product/**, /group/**, /groupVariant/**
+
+        - id: discountModule
+          uri: lb://discount-service
+          predicates:
+            - Path=/discount/**
