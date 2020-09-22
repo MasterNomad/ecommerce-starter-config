@@ -18,6 +18,6 @@ spring:
             - Path=/discount/**
 
         - id: bfftModule
-            uri: lb://bff-service
-            predicates:
-              - Path=/bff/**
+          uri: lb://bff-service
+          predicates:
+            - Path=/bff/**
