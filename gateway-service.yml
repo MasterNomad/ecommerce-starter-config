@@ -7,17 +7,7 @@ spring:
           predicates:
             - Path=/cart/**, /order/**
 
-        - id: productModule
-          uri: lb://product-service
-          predicates:
-            - Path=/product/**, /group/**, /groupVariant/**
-
-        - id: discountModule
-          uri: lb://discount-service
-          predicates:
-            - Path=/discount/**
-
         - id: bfftModule
           uri: lb://bff-service
           predicates:
-            - Path=/bff/**
+            - Path=/product/**, /group/**, /groupVariant/**
