@@ -7,7 +7,7 @@ spring:
           predicates:
             - Path=/cart/**, /order/**
 
-        - id: bfftModule
+        - id: bffModule
           uri: lb://bff-service
           predicates:
             - Path=/product/**, /group/**, /groupVariant/**
