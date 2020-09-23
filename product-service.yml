@@ -5,6 +5,3 @@ eureka:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3310/product
-
-recommendation:
-  default: 7, 8, 11
