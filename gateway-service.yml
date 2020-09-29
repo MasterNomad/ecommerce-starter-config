@@ -11,3 +11,8 @@ spring:
           uri: lb://bff-service
           predicates:
             - Path=/product/**, /group/**, /groupVariant/**
+
+        - id: securityModule
+          uri: lb://security-service
+          predicates:
+            - Path=/security/**
