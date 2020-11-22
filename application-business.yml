@@ -19,6 +19,15 @@ spring:
       allowOverride: true
       overrideNone: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    metrics:
+      enabled: true
+
 security:
   basic:
     enabled: false

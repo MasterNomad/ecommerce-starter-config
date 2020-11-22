@@ -16,3 +16,12 @@ spring:
           uri: lb://security-service
           predicates:
             - Path=/security/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    metrics:
+      enabled: true

@@ -1,2 +1,11 @@
 recommendation:
   default: 7, 8, 11
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    metrics:
+      enabled: true
